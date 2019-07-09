@@ -1,0 +1,137 @@
+.nav {
+  $this: &;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100vh;
+  visibility: hidden;
+
+  &.is-visible {
+    visibility: visible;
+  }
+
+  @include desktop {
+    visibility: visible;
+    position: relative;
+    max-width: 200px;
+    height: auto;
+  }
+
+  &__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+
+    &.is-visible {
+      visibility: visible;
+    }
+
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &__drawer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    max-width: 200px;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgb(220, 63, 67) 0%, rgb(232, 25, 31) 100%);
+    padding: 30px 0 0 0;
+    transition: transform $transition-default;
+    transform: translateX(-100%);
+    overflow-y: auto;
+
+    &.is-visible {
+      transform: translateX(0);
+    }
+
+    @include desktop {
+      transform: translateX(0);
+    }
+  }
+
+  &__list {
+    padding-left: 18px;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+
+    //& + & {
+    //  margin-bottom: 20px;
+    //}
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item-link {
+    @include heebo(medium);
+
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: $color-white;
+    font-size: 16px;
+  }
+
+  &__item-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    margin-right: 15px;
+  }
+
+  &__item-icon {
+    fill: $color-white;
+  }
+
+  &__settings {
+    display: flex;
+    align-items: center;
+    background-color: $color-cherry-red;
+    padding: 10px 15px;
+    margin-top: 35px;
+  }
+
+  &__settings-user {
+    @include objectFitImageParent();
+
+    position: relative;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: $color-white;
+    border: solid 1px $color-white-three;
+  }
+
+  &__settings-title {
+    margin-left: 10px;
+  }
+
+  &__settings-link {
+    @include heebo(medium);
+
+    display: flex;
+    text-decoration: none;
+    color: $color-white;
+  }
+}

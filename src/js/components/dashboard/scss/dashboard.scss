@@ -1,0 +1,275 @@
+.dashboard {
+  $this: &;
+
+  display: flex;
+  flex-grow: 1;
+  color: $color-black;
+  background-color: $color-white-two;
+  padding: 55px $default-mobile-side-padding 0 $default-mobile-side-padding;
+
+  @include desktop {
+    padding: 0 30px 40px 50px;
+  }
+
+  @include desktop-wide {
+    padding: 0 50px 40px 100px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__working-hours {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  &__working-hours-container {
+    padding: 0 20px;
+
+    @include desktop {
+      padding: 0 25px;
+    }
+  }
+
+  &__working-hours-element {
+    padding-top: 20px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: auto;
+    width: 100%;
+    right: 0;
+    z-index: 2;
+    background-color: $color-white-two;
+    padding: 15px 10px 15px 40px;
+
+    @include desktop {
+      position: relative;
+      padding: 30px 10px;
+    }
+  }
+
+  &__menu-button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    margin-right: 15px;
+
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &__title {
+    @include heebo(light);
+
+    font-size: 22px;
+    font-weight: 300;
+    color: $color-black;
+    background-color: $color-white-two;
+
+    @include desktop {
+      font-size: 25px;
+    }
+  }
+
+  &__schedule {
+    display: flex;
+    border-bottom: 1px solid $color-white-three;
+    padding: 30px 0 20px;
+  }
+
+  &__schedule-col-1 {
+    width: 30%;
+
+    @include desktop {
+      width: 20%;
+      padding-left: 5px;
+    }
+  }
+
+  &__schedule-title {
+    font-size: 15px;
+    font-weight: 400;
+    color: $color-greyish;
+  }
+
+  &__schedule-col-2 {
+    display: flex;
+    width: 70%;
+
+    @include desktop {
+      width: 80%;
+    }
+  }
+
+  &__schedule-choose-item {
+
+    &:first-child {
+      margin-right: 15px;
+
+      @include desktop {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__schedule-choose-label {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  &__schedule-choose-elem {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    border-radius: 50%;
+    border: solid 1px $color-greyish-light;
+    transition: 0.3s linear;
+
+    &::after {
+      content: '';
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background-color: $color-ocean-blue-light;
+      transition: 0.3s linear;
+    }
+  }
+
+  &__schedule-choose-text {
+    margin-left: 10px;
+  }
+
+  &__schedule-choose-input {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+
+    &:checked + #{$this}__schedule-choose-elem {
+
+      &::after {
+        width: 11px;
+        height: 11px;
+      }
+    }
+  }
+
+  &__schedule-checkbox-label {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  &__schedule-checkbox-elem {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid $color-silver;
+    margin-right: 10px;
+    transition: 0.3s linear;
+
+    &::after {
+      // content: url('../../../../img/icons/check-mark.svg');
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      background-color: $color-green-light;
+      background-image: url('../../../../img/icons/check-mark.svg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      transition: 0.3s linear;
+    }
+  }
+
+  &__schedule-checkbox-input {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+
+    &:checked + #{$this}__schedule-checkbox-elem {
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__schedule-checkbox-text {
+    font-size: 15px;
+    color: $color-greyish;
+  }
+
+  &__content-footer {
+    display: flex;
+    align-items: center;
+    background-color: $color-white-four;
+    padding: 15px;
+    margin-top: 40px;
+  }
+
+  &__save-button {
+    @include heebo(bold);
+
+    display: flex;
+    align-items: center;
+    min-width: 130px;
+    cursor: pointer;
+    font-size: 11px;
+    text-transform: uppercase;
+    background-color: $color-green-light;
+    color: $color-white;
+    border-radius: 4px;
+    border: solid 1px rgba(0,0,0, 0.05);
+    box-shadow: inset -1px 1px rgba(255,255,255,0);
+    padding: 10px 20px;
+    margin-right: 15px;
+
+    @include mobile-wide {
+      min-width: 140px;
+      font-size: 16px;
+    }
+  }
+
+  &__cancel-button {
+    @include heebo(medium);
+
+    display: flex;
+    cursor: pointer;
+    font-size: 13px;
+    color: $color-scarlet;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-right: 15px;
+  }
+
+  &__reset-button {
+    display: flex;
+    cursor: pointer;
+    font-size: 13px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+}

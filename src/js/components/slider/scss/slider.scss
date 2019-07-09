@@ -1,0 +1,129 @@
+.slider {
+  margin-bottom: 40px;
+
+  @include desktop {
+    margin-bottom: 25px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.is-hidden {
+    opacity: 0;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+      flex-direction: row;
+    }
+  }
+
+  &__col-1 {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 20px;
+
+    @include mobile-wide {
+      margin-bottom: 10px;
+    }
+
+    @include desktop {
+      width: 20%;
+      padding-left: 5px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__input-wrapper {
+    margin-right: 15px;
+  }
+
+  &__col-2 {
+    width: 100%;
+
+    @include desktop {
+      width: 80%;
+    }
+  }
+
+  &__value-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  &__value-element {
+    max-width: 55px;
+  }
+
+  &__value {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: $color-black;
+    border: 1px solid $color-greyish-light-two;
+    border-radius: 3px;
+    padding: 2px 0;
+  }
+
+  &__value-separator {
+    color: #464646;
+    margin: 0 5px;
+  }
+
+  &__checkbox {
+
+  }
+
+  &__element-wrapper {
+    width: 100%;
+    transition: opacity 0.8s;
+
+    &.is-hidden {
+      opacity: 0;
+    }
+
+    @include desktop {
+      width: 97%;
+    }
+  }
+
+  &__element {
+    &.noUi-horizontal {
+      height: 8px;
+
+      .noUi-handle {
+        width: 20px;
+        height: 20px;
+        outline: none;
+        border-radius: 50%;
+        box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.5);
+
+        &::after,
+        &::before {
+          display: none;
+        }
+      }
+
+      .noUi-connects {
+        border-radius: 12px;
+        background-color: #d8d8d8;
+      }
+
+      .noUi-connect {
+
+        background-color: #990000;
+      }
+    }
+
+    &.noUi-target {
+      border: none;
+    }
+  }
+}

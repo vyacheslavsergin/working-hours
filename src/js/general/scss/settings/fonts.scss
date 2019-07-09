@@ -1,0 +1,31 @@
+@mixin heebo($style: regular) {
+  font-family: 'Heebo-Regular';
+
+  @if $style == light {
+    font-family: 'Heebo-Light';
+  }
+
+  @if $style == medium {
+    font-family: 'Heebo-Medium';
+  }
+
+  @if $style == bold {
+    font-family: 'Heebo-Bold';
+  }
+}
+
+@mixin pt-sans($style: regular) {
+  font-family: 'pt_sansregular';
+
+  // @if $style == semibold {
+  //   font-family: 'open_sanssemibold';
+  // }
+
+  //@if $style == bold {
+  //  font-family: 'pt_sansbold';
+  //}
+
+  // @if $style == extrabold {
+  //   font-family: 'open_sansextrabold';
+  // }
+}

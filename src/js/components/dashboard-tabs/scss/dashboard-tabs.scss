@@ -1,0 +1,97 @@
+.dashboard-tabs {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border-radius: 3px;
+  background-color: $color-white;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.04);
+
+  &__nav-wrapper {
+    overflow-x: auto;
+    margin: 0 20px;
+
+    @include desktop {
+      margin: 0;
+    }
+  }
+
+  &__nav {
+    border-bottom: 1px solid $color-white-five;
+  }
+
+  &__nav-container {
+    display: flex;
+    max-width: 240px;
+
+    @include desktop {
+      max-width: none;
+    }
+  }
+
+  &__nav-item {
+    width: 100%;
+    max-width: 160px;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    color: $color-scarlet;
+    background-color: transparent;
+    border: none;
+    padding: 20px 0;
+    margin-left: 20px;
+    white-space: nowrap;
+
+    &.is-active {
+      @include heebo(medium);
+
+      border-bottom: 2px solid $color-scarlet;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    @include tablet {
+      margin-left: 25px;
+    }
+
+    @include desktop {
+
+    }
+
+    @include _desktop {
+      margin-left: 0;
+    }
+  }
+
+  &__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  &__content-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  &__content {
+    display: none;
+    flex-direction: column;
+    flex-grow: 1;
+
+    &.is-active {
+      display: flex;
+    }
+  }
+
+  &__slide-line {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: $color-scarlet;
+    transition: all .3s ease;
+  }
+}

@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./dist/app.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="app">
+    <div class="app__inner">
+        <div class="app__content">
+            <section class="nav" data-dc-component="nav">
+                <div class="nav__backdrop" data-dc-nav-ref="backdrop"></div>
+                <div class="nav__drawer" data-dc-nav-ref="drawer">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__item-link" href="#">
+                                <div class="nav__item-icon-wrapper">
+                                    <svg class="nav__item-icon" width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <path d="M10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0ZM10 2C14.4 2 18 5.6 18 10C18 14.4 14.4 18 10 18C5.6 18 2 14.4 2 10C2 5.6 5.6 2 10 2Z" stroke="none" />
+                                            <g transform="translate(3 2)">
+                                                <path d="M7.5 1.09375L7.5 0C7.9 0.1 8.29375 0.0875 8.59375 0.1875L8.40625 1.1875C8.10625 1.1875 7.8 1.09375 7.5 1.09375ZM4.40625 0.59375C4.70625 0.49375 5.1 0.3875 5.5 0.1875L5.6875 1.1875L4.8125 1.5L4.40625 0.59375ZM10.2813 0.90625L7.21875 5.125C7.14616 5.11702 7.07472 5.09375 7 5.09375C5.89543 5.09375 5 5.98918 5 7.09375C5 8.19832 5.89543 9.09375 7 9.09375C8.10457 9.09375 9 8.19832 9 7.09375C9 6.81761 8.94496 6.55178 8.84375 6.3125C8.84199 6.30833 8.84288 6.30264 8.84378 6.29694C8.84468 6.29119 8.84559 6.28543 8.84375 6.28125L11.9063 2.09375L10.2813 0.90625ZM1.8125 2.40625C2.0125 2.20625 2.29375 1.8875 2.59375 1.6875L3.1875 2.5C2.9875 2.7 2.7 2.89375 2.5 3.09375L1.8125 2.40625ZM12.9063 3.40625L12.0938 3.90625C12.2937 4.20625 12.4 4.3875 12.5 4.6875L13.4063 4.28125C13.3062 3.98125 13.1062 3.70625 12.9063 3.40625ZM0.1875 5.1875C0.2875 4.8875 0.49375 4.4875 0.59375 4.1875L1.5 4.59375L1.1875 5.5L0.1875 5.1875ZM14 6.40625L13 6.5L13 7.40625L14 7.40625L14 6.40625ZM0.09375 8.40625C0.09375 8.00625 0 7.68125 0 7.28125L1 7.28125C1 7.58125 1.09375 7.8875 1.09375 8.1875L0.09375 8.40625ZM12.6875 9.1875C12.4875 9.4875 12.3875 9.8 12.1875 10L13.0938 10.5C13.2937 10.2 13.3938 9.9 13.5938 9.5L12.6875 9.1875ZM0.90625 10.5L1.6875 10C1.7875 10.3 1.9875 10.5813 2.1875 10.7813L1.40625 11.4063C1.20625 11.1062 1.00625 10.8 0.90625 10.5Z" transform="translate(0 0.90625)" fill-rule="evenodd" stroke="none" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="nav__item-text">Dashboard</div>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__item-link" href="#">
+                                <div class="nav__item-icon-wrapper">
+                                    <svg class="nav__item-icon" width="26px" height="20px" viewBox="0 0 26 20" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <path d="M0 0L0 1L0 19L0 20L1 20L6 20L7 20L8 20L18 20L19 20L20 20L25 20L26 20L26 19L26 1L26 0L25 0L1 0L0 0ZM2 2L24 2L24 18L20.5938 18C20.5142 17.8629 20.5509 17.6759 20.4375 17.5625C20.0605 17.1855 19.5222 17 19 17C18.4778 17 17.9395 17.1855 17.5625 17.5625C17.4491 17.6759 17.4858 17.8629 17.4063 18L8.59375 18C8.51415 17.8629 8.55092 17.6759 8.4375 17.5625C8.06047 17.1855 7.52222 17 7 17C6.47778 17 5.93953 17.1855 5.5625 17.5625C5.44908 17.6759 5.48585 17.8629 5.40625 18L2 18L2 2ZM9 4C6.80271 4 5 5.80271 5 8C5 9.11423 5.47526 10.1161 6.21875 10.8438C4.88796 11.7456 4 13.2841 4 15L6 15C6 13.3455 7.34546 12 9 12C10.6545 12 12 13.3455 12 15L14 15C14 13.2841 13.112 11.7456 11.7813 10.8438C12.5247 10.1161 13 9.11423 13 8C13 5.80271 11.1973 4 9 4ZM9 6C10.1164 6 11 6.88359 11 8C11 9.11641 10.1164 10 9 10C7.88359 10 7 9.11641 7 8C7 6.88359 7.88359 6 9 6ZM16 7L16 9L22 9L22 7L16 7ZM16 11L16 13L22 13L22 11L16 11Z" id="Shape" stroke="none" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="nav__item-text">Customers</div>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__item-link" href="#">
+                                <div class="nav__item-icon-wrapper">
+                                    <svg class="nav__item-icon" width="22px" height="23px" viewBox="0 0 22 23" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <path d="M4 0L4 2L6 2L6 0L4 0ZM8 0L8 2L10 2L10 0L8 0ZM12 0L12 2L14 2L14 0L12 0ZM0 4L0 6L2 6L2 4L0 4ZM4 4L4 6L6 6L6 4L4 4ZM8 4L8 6L10 6L10 4L8 4ZM12 4L12 6L14 6L14 4L12 4ZM0 8L0 10L2 10L2 8L0 8ZM4 8L4 10L6 10L6 8L4 8ZM8 8L8 10L10 10L10 8L8 8Z" transform="translate(4 9)" id="Shape" stroke="none" />
+                                            <path d="M4 0L4 1L0 1L0 23L22 23L22 1L18 1L18 0L16 0L16 1L6 1L6 0L4 0ZM2 3L4 3L4 4L6 4L6 3L16 3L16 4L18 4L18 3L20 3L20 5L2 5L2 3ZM20 7L2 7L2 21L20 21L20 7Z" id="Combined-Shape" fill-rule="evenodd" stroke="none" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="nav__item-text">Calendar</div>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__item-link" href="#">
+                                <div class="nav__item-icon-wrapper">
+                                    <svg class="nav__item-icon" width="24px" height="23px" viewBox="0 0 24 23" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <path d="M0 0L0 1L0 7L0 8L1 8L2 8L2 9L2 10.875L3.5625 9.84375L6.3125 8L10 8L10 10L10 11L11 11L17.5625 11L18.5938 12.0313C16.5844 12.2365 15 13.9394 15 16C15 17.1142 15.4753 18.1161 16.2188 18.8438C14.888 19.7456 14 21.2841 14 23L16 23C16 21.3455 17.3455 20 19 20C20.6545 20 22 21.3455 22 23L24 23C24 21.2841 23.112 19.7456 21.7813 18.8438C22.5247 18.1161 23 17.1142 23 16C23 15.0033 22.6104 14.1092 22 13.4063L22 13L22 11L23 11L24 11L24 10L24 3L24 2L23 2L15 2L15 1L15 0L14 0L1 0L0 0ZM2 2L13 2L13 6L6 6L5.6875 6L5.4375 6.15625L4 7.125L4 7L4 6L3 6L2 6L2 2ZM15 4L22 4L22 9L21 9L20 9L20 10L20 10.5625L18.7188 9.28125L18.4063 9L18 9L12 9L12 8L14 8L15 8L15 7L15 4ZM5 12C2.80271 12 1 13.8027 1 16C1 17.1142 1.47526 18.1161 2.21875 18.8438C0.887962 19.7456 0 21.2841 0 23L2 23C2 21.3455 3.34545 20 5 20C6.65454 20 8 21.3455 8 23L10 23C10 21.2841 9.11204 19.7456 7.78125 18.8438C8.52474 18.1161 9 17.1142 9 16C9 13.8027 7.19729 12 5 12ZM5 14C6.11641 14 7 14.8836 7 16C7 17.1164 6.11641 18 5 18C3.88359 18 3 17.1164 3 16C3 14.8836 3.88359 14 5 14ZM19 14C20.1164 14 21 14.8836 21 16C21 17.1164 20.1164 18 19 18C17.8836 18 17 17.1164 17 16C17 14.8836 17.8836 14 19 14Z" id="Shape" stroke="none" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="nav__item-text">Chats</div>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__item-link" href="#">
+                                <div class="nav__item-icon-wrapper">
+                                    <svg class="nav__item-icon" width="24px" height="21px" viewBox="0 0 24 21" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <path d="M6 0L2.71875 3.28125L1.4375 2L0 3.4375L2 5.4375L2.71875 6.125L3.4375 5.4375L7.4375 1.4375L6 0ZM6 7L2.71875 10.2813L1.4375 9L0 10.4375L2 12.4375L2.71875 13.125L3.4375 12.4375L7.4375 8.4375L6 7ZM6 14L2.71875 17.2813L1.4375 16L0 17.4375L2 19.4375L2.71875 20.125L3.4375 19.4375L7.4375 15.4375L6 14Z" transform="translate(0.28125 0.28125)" id="Shape" fill="#FFFFFF" stroke="none" />
+                                            <path d="M0 0L0 2L13 2L13 0L0 0ZM0 7L0 9L13 9L13 7L0 7ZM0 16L0 14L13 14L13 16L0 16Z" transform="translate(11 2)" id="Combined-Shape" fill-rule="evenodd" stroke="none" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="nav__item-text">Tasks</div>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__item-link" href="#">
+                                <div class="nav__item-icon-wrapper">
+                                    <svg class="nav__item-icon" width="22px" height="22px" viewBox="0 0 22 22">
+                                        <g>
+                                            <path d="M2.15625 0L2 0.84375L0 13.8438L0 13.9375L0 14L0 21L0 22L1 22L21 22L22 22L22 21L22 14L22 13.9375L22 13.8438L20 0.84375L19.8438 0L19 0L3 0L2.15625 0ZM3.875 2L18.125 2L19.8125 13L14 13L13 13L13 14C13 15.1167 12.1167 16 11 16C9.88333 16 9 15.1167 9 14L9 13L8 13L2.1875 13L3.875 2ZM2 15L7.1875 15C7.64097 16.7106 9.15339 18 11 18C12.8466 18 14.359 16.7106 14.8125 15L20 15L20 20L2 20L2 15Z" id="Shape" stroke="none" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="nav__item-text">Inbox</div>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__item-link" href="#">
+                                <div class="nav__item-icon-wrapper">
+                                    <svg class="nav__item-icon" width="24px" height="22px" viewBox="0 0 24 22" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <path d="M12 0C8.40655 0 5.36312 0.661016 3.31731 1.26923C1.35985 1.85096 0 3.66189 0 5.71154L0 8.30769C0 9.31667 0.837173 10.1538 1.84615 10.1538L5.53846 10.1538C6.54744 10.1538 7.38462 9.31667 7.38462 8.30769L7.38462 5.88461C7.55754 5.8038 7.59435 5.77352 8.10577 5.625C8.94608 5.38097 10.2308 5.13461 12 5.13461C13.7692 5.13461 15.0539 5.38097 15.8942 5.625C16.4056 5.77352 16.4425 5.8038 16.6154 5.88461L16.6154 8.30769C16.6154 9.31667 17.4526 10.1538 18.4615 10.1538L22.1538 10.1538C23.1628 10.1538 24 9.31667 24 8.30769L24 5.71154C24 3.66189 22.6397 1.85199 20.6827 1.26923C18.6372 0.662074 15.5934 0 12 0ZM12 1.84615C15.3666 1.84615 18.2471 2.46 20.1635 3.02885C21.3559 3.38394 22.1538 4.47503 22.1538 5.71154L22.1538 8.30769L18.4615 8.30769L18.4615 5.27885L18.4615 4.73077L18 4.47115C18 4.47115 17.4135 4.12697 16.4135 3.83654C15.4134 3.54611 13.9462 3.28846 12 3.28846C10.0538 3.28846 8.58661 3.54611 7.58654 3.83654C6.58646 4.12697 6 4.47115 6 4.47115L5.53846 4.73077L5.53846 5.27885L5.53846 8.30769L1.84615 8.30769L1.84615 5.71154C1.84615 4.47503 2.64446 3.38312 3.83654 3.02885C5.75257 2.45922 8.63345 1.84615 12 1.84615Z" stroke="none" />
+                                            <g transform="translate(4 12)">
+                                                <path d="M0 1.84615C0 0.826552 0.826551 0 1.84615 0C2.86576 0 3.69231 0.826552 3.69231 1.84615C3.69231 2.86576 2.86576 3.69231 1.84615 3.69231C0.826551 3.69231 0 2.86576 0 1.84615ZM5.53846 1.84615C5.53846 0.826552 6.36501 0 7.38462 0C8.40422 0 9.23077 0.826552 9.23077 1.84615C9.23077 2.86576 8.40422 3.69231 7.38462 3.69231C6.36501 3.69231 5.53846 2.86576 5.53846 1.84615ZM12.9231 0C11.9035 0 11.0769 0.826552 11.0769 1.84615C11.0769 2.86576 11.9035 3.69231 12.9231 3.69231C13.9427 3.69231 14.7692 2.86576 14.7692 1.84615C14.7692 0.826552 13.9427 0 12.9231 0ZM0 7.38462C0 6.36501 0.826551 5.53846 1.84615 5.53846C2.86576 5.53846 3.69231 6.36501 3.69231 7.38462C3.69231 8.40422 2.86576 9.23077 1.84615 9.23077C0.826551 9.23077 0 8.40422 0 7.38462ZM7.38462 5.53846C6.36501 5.53846 5.53846 6.36501 5.53846 7.38462C5.53846 8.40422 6.36501 9.23077 7.38462 9.23077C8.40422 9.23077 9.23077 8.40422 9.23077 7.38462C9.23077 6.36501 8.40422 5.53846 7.38462 5.53846ZM11.0769 7.38462C11.0769 6.36501 11.9035 5.53846 12.9231 5.53846C13.9427 5.53846 14.7692 6.36501 14.7692 7.38462C14.7692 8.40422 13.9427 9.23077 12.9231 9.23077C11.9035 9.23077 11.0769 8.40422 11.0769 7.38462Z" transform="translate(0.6153846 0)" fill-rule="evenodd" stroke="none" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="nav__item-text">Calls</div>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__item-link" href="#">
+                                <div class="nav__item-icon-wrapper">
+                                    <svg class="nav__item-icon" width="19px" height="24px" viewBox="0 0 19 24" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <path d="M0 0L0 0.864865L0 20.7568L0 21.4595L0.669643 21.5946L10.9554 23.7838L12 24L12 22.9459L12 21.6216L16.2857 21.6216L17.1429 21.6216L17.1429 20.7568L17.1429 17.1081L17.9196 16.8108L18.7232 16.4865L18.4286 15.7027L17.0893 12.1081L17.1429 12.1081L17.1429 10.7568L18.6161 9.27027L18.8571 9L18.8571 8.64865L18.8571 0.864865L18.8571 0L18 0L0.857143 0L0 0ZM7.74107 1.72973L17.1429 1.72973L17.1429 8.27027L16.0446 9.37838L14.0357 4.02703L13.7411 3.21622L12.9375 3.51351L10.2857 4.54054L10.2857 3.05405L10.2857 2.37838L9.64286 2.21622L7.74107 1.72973ZM1.71429 1.97297L8.57143 3.72973L8.57143 10.8378L8.57143 11.1892L8.8125 11.4324L10.2857 12.9189L10.2857 21L10.2857 21.8919L1.71429 20.0541L1.71429 1.97297ZM12.75 5.45946L16.5268 15.4865L12 17.2703L12 12.5676L12 12.2162L11.7589 11.9459L10.2857 10.4595L10.2857 6.40541L12.75 5.45946ZM15.4286 17.7838L15.4286 19.8919L12 19.8919L12 19.1081L15.4286 17.7838Z" stroke="none" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="nav__item-text">Leads</div>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__item-link" href="#">
+                                <div class="nav__item-icon-wrapper">
+                                    <svg class="nav__item-icon" width="24px" height="15px" viewBox="0 0 24 15" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <path d="M6.4 0C3.75851 0 1.6 2.15851 1.6 4.8C1.6 6.38699 2.38011 7.80003 3.575 8.675C1.46492 9.72326 0 11.8914 0 14.4L1.6 14.4C1.6 11.7396 3.73955 9.6 6.4 9.6C9.06045 9.6 11.2 11.7396 11.2 14.4L12.8 14.4C12.8 11.7396 14.9396 9.6 17.6 9.6C20.2605 9.6 22.4 11.7396 22.4 14.4L24 14.4C24 11.8914 22.5351 9.72326 20.425 8.675C21.6199 7.80003 22.4 6.38699 22.4 4.8C22.4 2.15851 20.2415 0 17.6 0C14.9585 0 12.8 2.15851 12.8 4.8C12.8 6.38699 13.5801 7.80003 14.775 8.675C13.6082 9.25464 12.6312 10.1643 12 11.3C11.3688 10.1643 10.3918 9.25464 9.225 8.675C10.4199 7.80003 11.2 6.38699 11.2 4.8C11.2 2.15851 9.04149 0 6.4 0ZM6.4 1.6C8.17679 1.6 9.6 3.02321 9.6 4.8C9.6 6.57679 8.17679 8 6.4 8C4.62321 8 3.2 6.57679 3.2 4.8C3.2 3.02321 4.62321 1.6 6.4 1.6ZM17.6 1.6C19.3768 1.6 20.8 3.02321 20.8 4.8C20.8 6.57679 19.3768 8 17.6 8C15.8232 8 14.4 6.57679 14.4 4.8C14.4 3.02321 15.8232 1.6 17.6 1.6Z" stroke="none" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="nav__item-text">Team</div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="nav__settings">
+                        <div class="nav__settings-user">
+                            <img
+                                    src="./dist/img/content/4.jpg"
+                                    alt="" />
+                        </div>
+                        <div class="nav__settings-title">
+                            <a class="nav__settings-link" href="#">Settings</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <main class="app-main">
+
+                <div class="dashboard" data-dc-component="dashboard">
+                    <div class="dashboard__container">
+
+                        <div class="dashboard__nav">
+                            <button
+                                class="dashboard__menu-button"
+                                type="button"
+                                data-dc-dashboard-ref="menu-button"
+                            >
+                                <svg width="18px" height="20px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+                                </svg>
+                            </button>
+                            <h1
+                                class="dashboard__title"
+                                data-dc-dashboard-ref="primary-nav">Settings</h1>
+                        </div>
+
+                        <div class="dashboard-tabs" data-dc-component="dashboard-tabs">
+                            <div class="dashboard-tabs__nav-wrapper">
+                                <div
+                                        class="dashboard-tabs__nav"
+                                        data-dc-dashboard-tabs-ref="nav">
+                                    <div class="dashboard-tabs__nav-container">
+                                        <button
+                                                class="dashboard-tabs__nav-item"
+                                                data-dc-dashboard-tabs-ref="tab-nav[]"
+                                                data-dc-dashboard-tabs-options="0">Profile</button>
+                                        <button
+                                                class="dashboard-tabs__nav-item"
+                                                data-dc-dashboard-tabs-ref="tab-nav[]"
+                                                data-dc-dashboard-tabs-options="1">Notifications</button>
+                                        <button
+                                                class="dashboard-tabs__nav-item"
+                                                data-dc-dashboard-tabs-ref="tab-nav[]"
+                                                data-dc-dashboard-tabs-options="2">Password</button>
+                                        <button
+                                                class="dashboard-tabs__nav-item is-active"
+                                                data-dc-dashboard-tabs-ref="tab-nav[]"
+                                                data-dc-dashboard-tabs-options="3">Working hours</button>
+                                        <button class="dashboard-tabs__nav-item"
+                                                data-dc-dashboard-tabs-ref="tab-nav[]"
+                                                data-dc-dashboard-tabs-options="4">Call settings</button>
+                                    </div>
+                                    <!--                                <span-->
+                                    <!--                                    class="dashboard-tabs__slide-line"-->
+                                    <!--                                    data-dc-dashboard-tabs-ref="slide-line">-->
+                                    <!--                                </span>-->
+                                </div>
+                            </div>
+                            <div class="dashboard-tabs__content-wrapper">
+                                <div class="dashboard-tabs__content-container">
+                                    <div
+                                            class="dashboard-tabs__content"
+                                            data-dc-dashboard-tabs-ref="tab-content[]"
+                                            data-dc-dashboard-tabs-options="0"><h3>Profile</h3></div>
+                                    <div
+                                            class="dashboard-tabs__content"
+                                            data-dc-dashboard-tabs-ref="tab-content[]"
+                                            data-dc-dashboard-tabs-options="1"><h3>Notifications</h3></div>
+                                    <div
+                                            class="dashboard-tabs__content"
+                                            data-dc-dashboard-tabs-ref="tab-content[]"
+                                            data-dc-dashboard-tabs-options="2"><h3>Password</h3></div>
+                                    <div
+                                            class="dashboard-tabs__content is-active"
+                                            data-dc-dashboard-tabs-ref="tab-content[]"
+                                            data-dc-dashboard-tabs-options="3">
+
+                                        <form class="dashboard__working-hours" method="post">
+                                            <div class="dashboard__working-hours-container">
+                                                <div class="dashboard__schedule">
+                                                    <div class="dashboard__schedule-col-1">
+                                                        <h3 class="dashboard__schedule-title">Schedule</h3>
+                                                    </div>
+
+                                                    <div class="dashboard__schedule-col-2">
+                                                        <div class="dashboard__schedule-choose-item">
+                                                            <label
+                                                                    class="dashboard__schedule-choose-label">
+                                                                <input
+                                                                        class="dashboard__schedule-choose-input"
+                                                                        type="radio"
+                                                                        name="r"
+                                                                        value="fixed"
+                                                                        checked />
+                                                                <div class="dashboard__schedule-choose-elem"></div>
+                                                                <div class="dashboard__schedule-choose-text">Fixed</div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="dashboard__schedule-choose-item">
+                                                            <label
+                                                                    class="dashboard__schedule-choose-label">
+                                                                <input
+                                                                        class="dashboard__schedule-choose-input"
+                                                                        type="radio"
+                                                                        name="r"
+                                                                        value="flexible" />
+                                                                <div class="dashboard__schedule-choose-elem"></div>
+                                                                <div class="dashboard__schedule-choose-text">Flexible</div>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="dashboard__working-hours-element">
+                                                    <div class="dashboard__working-hours-element-container">
+                                                        <div class="slider" data-dc-component="slider">
+                                                            <div class="slider__container">
+                                                                <div class="slider__col-1">
+                                                                    <div class="slider__input-wrapper">
+                                                                        <div class="dashboard__schedule-checkbox">
+                                                                            <label
+                                                                                    class="dashboard__schedule-checkbox-label">
+<!--                                                                                <input-->
+<!--                                                                                        class="dashboard__schedule-checkbox-input"-->
+<!--                                                                                        type="checkbox"-->
+<!--                                                                                        name="c"-->
+<!--                                                                                        value=""-->
+<!--                                                                                        data-dc-slider-ref="checkbox" />-->
+<!--                                                                                <div class="dashboard__schedule-checkbox-elem"></div>-->
+                                                                                <div class="dashboard__schedule-checkbox-text">Working hours</div>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="slider__col-2">
+                                                                    <div class="slider__element-wrapper" data-dc-slider-ref="slider-element-wrapper">
+                                                                        <div class="slider__value-wrapper">
+                                                                            <div class="slider__value-element">
+                                                                                <input class="slider__value" data-dc-slider-ref="time-start" type="text" />
+                                                                            </div>
+                                                                            <span class="slider__value-separator">-</span>
+                                                                            <div class="slider__value-element">
+                                                                                <input class="slider__value" data-dc-slider-ref="time-end" type="text" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="slider__element" data-dc-slider-ref="slider-element">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="slider" data-dc-component="slider">
+                                                            <div class="slider__container">
+                                                                <div class="slider__col-1">
+                                                                    <div class="slider__input-wrapper">
+                                                                        <div class="dashboard__schedule-checkbox">
+                                                                            <label
+                                                                                    class="dashboard__schedule-checkbox-label">
+                                                                                <input
+                                                                                        class="dashboard__schedule-checkbox-input"
+                                                                                        type="checkbox"
+                                                                                        name="c"
+                                                                                        value=""
+                                                                                        data-dc-slider-ref="checkbox" />
+                                                                                <div class="dashboard__schedule-checkbox-elem"></div>
+                                                                                <div class="dashboard__schedule-checkbox-text">Monday</div>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="slider__col-2">
+                                                                    <div class="slider__element-wrapper" data-dc-slider-ref="slider-element-wrapper">
+                                                                        <div class="slider__value-wrapper">
+                                                                            <div class="slider__value-element">
+                                                                                <input class="slider__value" data-dc-slider-ref="time-start" type="text" />
+                                                                            </div>
+                                                                            <span class="slider__value-separator">-</span>
+                                                                            <div class="slider__value-element">
+                                                                                <input class="slider__value" data-dc-slider-ref="time-end" type="text" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="slider__element" data-dc-slider-ref="slider-element">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="slider" data-dc-component="slider">
+                                                            <div class="slider__container">
+                                                                <div class="slider__col-1">
+                                                                    <div class="slider__input-wrapper">
+                                                                        <div class="dashboard__schedule-checkbox">
+                                                                            <label
+                                                                                    class="dashboard__schedule-checkbox-label">
+                                                                                <input
+                                                                                        class="dashboard__schedule-checkbox-input"
+                                                                                        type="checkbox"
+                                                                                        name="c"
+                                                                                        value=""
+                                                                                        data-dc-slider-ref="checkbox" />
+                                                                                <div class="dashboard__schedule-checkbox-elem"></div>
+                                                                                <div class="dashboard__schedule-checkbox-text">Tuesday</div>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="slider__col-2">
+                                                                    <div class="slider__element-wrapper" data-dc-slider-ref="slider-element-wrapper">
+                                                                        <div class="slider__value-wrapper">
+                                                                            <div class="slider__value-element">
+                                                                                <input class="slider__value" data-dc-slider-ref="time-start" type="text" />
+                                                                            </div>
+                                                                            <span class="slider__value-separator">-</span>
+                                                                            <div class="slider__value-element">
+                                                                                <input class="slider__value" data-dc-slider-ref="time-end" type="text" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="slider__element" data-dc-slider-ref="slider-element">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="slider" data-dc-component="slider">
+                                                            <div class="slider__container">
+                                                                <div class="slider__col-1">
+                                                                    <div class="slider__input-wrapper">
+                                                                        <div class="dashboard__schedule-checkbox">
+                                                                            <label
+                                                                                    class="dashboard__schedule-checkbox-label">
+                                                                                <input
+                                                                                        class="dashboard__schedule-checkbox-input"
+                                                                                        type="checkbox"
+                                                                                        name="c"
+                                                                                        value=""
+                                                                                        data-dc-slider-ref="checkbox" />
+                                                                                <div class="dashboard__schedule-checkbox-elem"></div>
+                                                                                <div class="dashboard__schedule-checkbox-text">Wedndesday</div>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="slider__col-2">
+                                                                    <div class="slider__element-wrapper" data-dc-slider-ref="slider-element-wrapper">
+                                                                        <div class="slider__value-wrapper">
+                                                                            <div class="slider__value-element">
+                                                                                <input class="slider__value" data-dc-slider-ref="time-start" type="text" />
+                                                                            </div>
+                                                                            <span class="slider__value-separator">-</span>
+                                                                            <div class="slider__value-element">
+                                                                                <input class="slider__value" data-dc-slider-ref="time-end" type="text" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="slider__element" data-dc-slider-ref="slider-element">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="slider" data-dc-component="slider">
+                                                            <div class="slider__container">
+                                                                <div class="slider__col-1">
+                                                                    <div class="slider__input-wrapper">
+                                                                        <div class="dashboard__schedule-checkbox">
+                                                                            <label
+                                                                                    class="dashboard__schedule-checkbox-label">
+                                                                                <input
+                                                                                        class="dashboard__schedule-checkbox-input"
+                                                                                        type="checkbox"
+                                                                                        name="c"
+                                                                                        value=""
+                                                                                        data-dc-slider-ref="checkbox" />
+                                                                                <div class="dashboard__schedule-checkbox-elem"></div>
+                                                                                <div class="dashboard__schedule-checkbox-text">Thursday</div>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="slider__col-2">
+                                                                    <div class="slider__element-wrapper" data-dc-slider-ref="slider-element-wrapper">
+                                                                        <div class="slider__value-wrapper">
+                                                                            <div class="slider__value-element">
+                                                                                <input class="slider__value" data-dc-slider-ref="time-start" type="text" />
+                                                                            </div>
+                                                                            <span class="slider__value-separator">-</span>
+                                                                            <div class="slider__value-element">
+                                                                                <input class="slider__value" data-dc-slider-ref="time-end" type="text" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="slider__element" data-dc-slider-ref="slider-element">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="slider" data-dc-component="slider">
+                                                            <div class="slider__container">
+                                                                <div class="slider__col-1">
+                                                                    <div class="slider__input-wrapper">
+                                                                        <div class="dashboard__schedule-checkbox">
+                                                                            <label
+                                                                                    class="dashboard__schedule-checkbox-label">
+                                                                                <input
+                                                                                        class="dashboard__schedule-checkbox-input"
+                                                                                        type="checkbox"
+                                                                                        name="c"
+                                                                                        value=""
+                                                                                        data-dc-slider-ref="checkbox" />
+                                                                                <div class="dashboard__schedule-checkbox-elem"></div>
+                                                                                <div class="dashboard__schedule-checkbox-text">Friday</div>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="slider__col-2">
+                                                                    <div class="slider__element-wrapper" data-dc-slider-ref="slider-element-wrapper">
+                                                                        <div class="slider__value-wrapper">
+                                                                            <div class="slider__value-element">
+                                                                                <input class="slider__value" data-dc-slider-ref="time-start" type="text" />
+                                                                            </div>
+                                                                            <span class="slider__value-separator">-</span>
+                                                                            <div class="slider__value-element">
+                                                                                <input class="slider__value" data-dc-slider-ref="time-end" type="text" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="slider__element" data-dc-slider-ref="slider-element">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="slider" data-dc-component="slider">
+                                                            <div class="slider__container">
+                                                                <div class="slider__col-1">
+                                                                    <div class="slider__input-wrapper">
+                                                                        <div class="dashboard__schedule-checkbox">
+                                                                            <label
+                                                                                    class="dashboard__schedule-checkbox-label">
+                                                                                <input
+                                                                                        class="dashboard__schedule-checkbox-input"
+                                                                                        type="checkbox"
+                                                                                        name="c"
+                                                                                        value=""
+                                                                                        data-dc-slider-ref="checkbox" />
+                                                                                <div class="dashboard__schedule-checkbox-elem"></div>
+                                                                                <div class="dashboard__schedule-checkbox-text">Saturday</div>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="slider__col-2">
+                                                                    <div class="slider__element-wrapper" data-dc-slider-ref="slider-element-wrapper">
+                                                                        <div class="slider__value-wrapper">
+                                                                            <div class="slider__value-element">
+                                                                                <input class="slider__value" data-dc-slider-ref="time-start" type="text" />
+                                                                            </div>
+                                                                            <span class="slider__value-separator">-</span>
+                                                                            <div class="slider__value-element">
+                                                                                <input class="slider__value" data-dc-slider-ref="time-end" type="text" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="slider__element" data-dc-slider-ref="slider-element">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="slider" data-dc-component="slider">
+                                                            <div class="slider__container">
+                                                                <div class="slider__col-1">
+                                                                    <div class="slider__input-wrapper">
+                                                                        <div class="dashboard__schedule-checkbox">
+                                                                            <label
+                                                                                    class="dashboard__schedule-checkbox-label">
+                                                                                <input
+                                                                                        class="dashboard__schedule-checkbox-input"
+                                                                                        type="checkbox"
+                                                                                        name="c"
+                                                                                        value=""
+                                                                                        data-dc-slider-ref="checkbox" />
+                                                                                <div class="dashboard__schedule-checkbox-elem"></div>
+                                                                                <div class="dashboard__schedule-checkbox-text">Sunday</div>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="slider__col-2">
+                                                                    <div class="slider__element-wrapper" data-dc-slider-ref="slider-element-wrapper">
+                                                                        <div class="slider__value-wrapper">
+                                                                            <div class="slider__value-element">
+                                                                                <input class="slider__value" data-dc-slider-ref="time-start" type="text" />
+                                                                            </div>
+                                                                            <span class="slider__value-separator">-</span>
+                                                                            <div class="slider__value-element">
+                                                                                <input class="slider__value" data-dc-slider-ref="time-end" type="text" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="slider__element" data-dc-slider-ref="slider-element">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="dashboard__content-footer">
+                                                <button class="dashboard__save-button" type="submit">save changes</button>
+                                                <button class="dashboard__cancel-button" type="button">Cancel</button>
+                                                <button class="dashboard__reset-button" type="button">to reset changes</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div
+                                            class="dashboard-tabs__content"
+                                            data-dc-dashboard-tabs-ref="tab-content[]"
+                                            data-dc-dashboard-tabs-options="4"><h3>Call settings</h3></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+</div>
+<script src="./dist/app.js"></script>
+</body>
+</html>
+</html>
