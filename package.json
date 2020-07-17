@@ -58,7 +58,7 @@
     "detect-hover": "^1.0.2",
     "fbemitter": "^2.1.1",
     "firebase": "^6.2.2",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "mobile-detect": "^1.4.3",
     "normalize.css": "^8.0.1",
     "nouislider": "^14.0.2",
